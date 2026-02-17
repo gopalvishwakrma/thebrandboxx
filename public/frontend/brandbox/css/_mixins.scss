@@ -1,0 +1,110 @@
+$primary_family:'Habibi',
+serif;
+$secondary_family:'Archivo';
+$main_color:#FFB930;
+$white:#ffffff;
+$black:#171717;
+@mixin title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 110%;
+    align-items: center;
+    color: $white;
+    font-family: $primary_family;
+}
+
+@mixin p32 {
+    font-family: $secondary_family;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 35px;
+    color: $white;
+}
+
+@mixin p28 {
+    font-family: $secondary_family;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 150%;
+    color: $white;
+}
+
+@mixin p24 {
+    font-family: $secondary_family;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 26px;
+    color: $white;
+}
+
+@mixin p20 {
+    font-family: $secondary_family;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: $white;
+}
+
+@mixin p18 {
+    font-family: $secondary_family;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    color: $white;
+}
+
+@mixin common_round_btn {
+    padding: 14px 24px;
+    height: 52px;
+    border-radius: 39px;
+    font-family: $secondary_family;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    color: $black;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+}
+
+@mixin custom_control {
+    width: 100%;
+    height: 52px;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    color: $white;
+    background: transparent;
+    font-family: $secondary_family;
+    &::placeholder {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 20px;
+        color: $white;
+    }
+}
+
+.container {
+    width: 1440px !important;
+    max-width: 90% !important;
+}
+
+.form-control:focus {
+    background: transparent !important;
+    color: $white !important;
+}
+
+a:hover {
+    color: $white !important;
+}
